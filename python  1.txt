@@ -1,0 +1,25 @@
+dic = {'a':"12",'b':"13",'c':"14",'d':"15",'e':"16",'f':"17",'g':"18",'h':"19",'i':"20",'j':"21" }
+
+ 
+
+username = input("Enter username :- ")
+
+ 
+
+if username in dic :
+    
+password = input("Enter password :- ")
+   
+ if dic[username] == password :
+        
+print ("You are now logged into the system.")
+    
+else :
+        
+print ("Invalid password.")
+
+ 
+
+else :
+   
+ print ("You are not valid user.")
