@@ -1,0 +1,49 @@
+Mutable objects:
+>>> a=2
+>>> print("reference of a",id(a))
+reference of a 1798987999568
+>>> 
+String concepts:
+methods:
+str="hello world"
+>>> print(str)
+hello world
+>>> str="hello"
+>>> for char in str:
+	print(char)
+
+	
+h
+e
+l
+l
+o
+>>> 
+>>> str="hello"
+>>> print (str[:])
+hello
+>>> 
+>>> str="hello"
+>>> print (str[:1])
+h
+>>> 
+>>> str="hello"
+>>> print(str[2:])
+llo
+str="hello"
+>>> print(str.find('e'))
+1
+str="hello"
+>>> print(str.replace('e','h'))
+hhllo
+format specifiers:
+txt = "My name is {fname}, I'm {age}".format(fname = "priya", age = 36)
+>>> print(txt)
+My name is priya, I'm 36
+format method:
+
+print("My name is{},I coming from{}".format("vijay","chennai"))
+My name isvijay,I coming fromchennai
+
+
+
