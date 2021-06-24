@@ -1,0 +1,47 @@
+List  concept:
+list1=[10,20,30,40]
+>>> print(list1)
+[10, 20, 30, 40]
+>>
+
+>>> list1=[10,20]
+>>> for ele in list1:
+	print(ele)
+
+	
+10
+20
+>>> 
+list=[10,20]
+>>> print("element of list:",list)
+element of list: [10, 20]
+list=[10,20]
+>>> list.append(30)
+>>> print(list)
+[10, 20, 30]
+
+list=[10,20]
+print("ele of list:",list)
+print("size of list:",list)
+list.insert(60,70)
+print("ele of list:",list)
+print("size of list:",list)
+Output:
+ele of list: [10, 20]
+size of list: [10, 20]
+ele of list: [10, 20, 70]
+size of list: [10, 20, 70]
+> 
+
+list=[10,20]
+print("ele of list:",list)
+print("size of list:",list)
+list.remove(10)
+print("ele of list:",list)
+print("size of list:",list)
+output:
+ele of list: [10, 20]
+size of list: [10, 20]
+ele of list: [20]
+size of list: [20]
+> 
