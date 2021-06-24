@@ -1,0 +1,65 @@
+Sorting the list:
+list=[69,30,10,70]
+list.sort()
+print("before sorting:",list)
+before sorting: [10, 30, 69, 70]
+> 
+list1=[10,30,60,"hello",80,"hi",40]
+list2=[]
+for element in list1:
+    list2.append(str(element))
+    print("before sorting:",list2)
+    list2.sort()
+    print("end sortin:",list2)
+output:
+before sorting: ['10', '30', '60', '80', 'hello', 'hi', '40']
+end sortin: ['10', '30', '40', '60', '80', 'hello', 'hi']
+> 
+Enumeration:
+list1=['a','b','c','d','e','f']
+ for index,element in enumerate(list1,2):
+	  print(f"{element}is present at index{index}")
+ 
+Tuples:
+tuple=(10,20,30)
+>>> print(tuple)
+(10, 20, 30)
+>>> 
+
+tuple=(10,20,30,40)
+>>> print(tuple.index(20))
+1
+>>> 
+Dictionary:
+
+d={"name":"priya","age":10,"name":"vijay","age":21}
+>>> print(d["age"])
+21
+>>> 
+>>> d={"name":"priya","age":10,"name":"vijay","age":21}
+>>> d["lname"]="roja"
+>>> print(d)
+{'name': 'vijay', 'age': 21, 'lname': 'roja'}
+>>> 
+ d1={'name':'aaa','rank':1,'class':'second'}
+>>> d2={'age':13}
+>>> d1.update(d2)
+>>> print(d1)
+{'name': 'aaa', 'rank': 1, 'class': 'second', 'age': 13}
+>>> 
+d1={'name':'aaa','rank':1}
+>>> d1.clear()
+>>> print(d1)
+{}
+>>> 
+List comprehensions:
+
+numbers=[x for x in range(40)]
+>>> print(numbers)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+>>> 
+square_of_numbers=[x*x for x in range(40)]
+>>> print(square_of_numbers)
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400, 441, 484, 529, 576, 625, 676, 729, 784, 841, 900, 961, 1024, 1089, 1156, 1225, 1296, 1369, 1444, 1521]
+>>> 
+
