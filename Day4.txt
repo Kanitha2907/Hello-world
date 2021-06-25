@@ -1,0 +1,47 @@
+Conditional statements:
+if..else
+ num = int(input("Enter a number\n"))
+ if num<0:
+ print("negative")
+ else:
+ print("positive")
+for loop:
+for num in range(50):
+    print(num)
+while:
+count=0
+>>> while count<9:
+	count+=1
+	print(count)
+
+	
+1
+2
+3
+4
+5
+6
+7
+8
+9
+>>> 
+Prime number:
+num = int(input("Enter a number: "))
+flag=0
+for n in range(2,num):
+    if num%2==0:
+        flag=1
+        break
+    if flag:
+        print("is prime")
+    else:
+        print(" not prime")
+
+Functions:
+>>> def showValues(name,age):
+	print(f"name:{Name},Age:{age}")
+	showValues("priya",10)   
+
+def findmax(*args):
+print(args)
+findmax() 
