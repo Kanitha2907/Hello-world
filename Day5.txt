@@ -1,0 +1,65 @@
+Generator:
+def genseq():
+  yield 1
+  yield 2
+  yield 3
+for num in genseq():
+  print(num)
+1
+2
+3
+ 
+Iteratable:
+list=[10,20,30,40]
+>>> ia=iter(list)
+>>> print(next(ia))
+10
+>>> 
+filters:
+numbers=[x for x in range(50)]
+def check_even(x):
+	if x%2==0:
+		return true
+	else:
+		return false
+	even_numbers=list(filter(check_even,numbers))
+	print(even_numbers)
+>>>
+Lambda:
+numbers=[x for x in range(50)]
+>>>  def check_even(x):
+	if x%2==0:
+		return true
+	else:
+		return false
+	even_numbers=list(filter(lambda x: x%2==0,numbers))
+	print(even_numbers)
+Map functions:
+
+numbers=[x for x in range(50)]
+def check_even(x):
+	if x%2==0:
+		return true
+	else:
+		return false
+	even_numbers=list(filter(lambda x: x%2==0,numbers))
+	#print(even_numbers)
+square_of_numbers=list(map(lambda x: x*x,numbers))
+print(square_of_numbers)
+>>>
+def findnum(n):
+  num=0
+while num<n:
+  num+=1
+yield num
+for n in findnum(20):
+print(n,end='\t')
+>>>
+def findnum(n):
+  num=0
+while num<n:
+ num +=1
+  yield num
+total=sum(findnum(20))
+print(total)
+>>>210
