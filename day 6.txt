@@ -1,0 +1,32 @@
+Nested functios:
+def f(x):
+def g(y):
+return y*y
+return x+g(x)
+return g
+g=f(10)
+print(g)
+print(g())
+>>
+Decorator:
+def display(name):
+    return f"hi{name}good morning"
+    print(display("priya"))
+>>>
+File concepts:
+fh=open("C:\Users\kanitha.velusamy\Documents\Day1.txt",'r')
+print(fh.read(100))
+fh.close()
+
+>>
+fh=open("file.txt",'w')
+fh.write("hi\n")
+fh.write("hello\n")
+fh.close()
+>>
+fh=open(""C:\Users\kanitha.velusamy\Documents\Day3.txt",'rb')
+print(fh,read(2))
+print(fh.tell())
+fh.close()
+
+>>>
