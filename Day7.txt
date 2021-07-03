@@ -1,0 +1,37 @@
+Modules:
+import sys
+print(sys.argv)
+>>
+import datetime
+x=datetime.datetime.now()
+print(x)
+>>>
+
+def addnum(a,b):
+return a+b
+defdivnum(a,b)
+return a+b
+>>>
+import hello
+import sys
+print(sys.path)
+print(hello.addnum(2,5))
+print(hello.divnum(4,2))
+>>>
+
+import datetime
+x=datetime.datetime.x()
+print(x)
+print("the current year is:",x.year)
+print("the current month is:",x.month)
+print("the current day is:",x.day)
+y=datetime.datetime(1999,7,29)
+print("the new date is:",y)
+print(x.strftime("%y %m %d"))
+curdate=datetime.datetime.now()
+hours=8
+timediff=datetime.timedelta(hours=hours)
+future_time=curdate+timediff
+print("the current timestamp:",curdate)
+print("after 4 hours",future_time)
+>>>
