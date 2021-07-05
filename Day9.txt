@@ -1,0 +1,37 @@
+Regular expressions:
+import re
+fh=open('readmetxt',t,'r')
+count=0
+for line in fh.readlines():'sobj=re.search(r'^\s*$',line)
+if sobj:
+print(line)
+count+=1
+fh.close
+print("numbr of blamk lines{}".format((count))
+>>>
+import re
+s1=input("enter a string")
+sobj=re.search(r'to*tal's1)
+if obj:
+print("matched")
+else:
+print("not matched")
+>>
+use metacharacters:
+import re
+s1=input("enter a string)
+sobj=re.search(r'.*\.(.*)\..*',s1)
+if sobj:
+print(sobj.group(1))
+else:
+print("not matched")
+>>>
+import re
+fh=open('/kanithavelusamy/Documents/p.py','r')
+count=0
+for line in fh.readlines():
+    sobj=re.search(r'^\s*s',line)
+    if sobj:
+        print(line)
+        count+=c
+fh.close()      
