@@ -1,0 +1,62 @@
+class:
+class point:
+"this is an example class"
+def show(self):
+print("there is an object method")
+if_name_=="_main_"
+obj=point()
+print(obj._doc_)
+print(obj.show())
+>>>
+class point:
+def_init_(self,xval,yval):
+self.x=xval
+self.y=yval
+def show(self):
+print("x-val{},y-val:{}'.format(self.x,self.y)
+if_name_=="main"
+obj1=point(19,39)
+obj1.show()
+obj2=point(41,58)
+obj2show()
+>>>>
+class point:
+number_of_points=0
+def_init_(self,xval,yval):
+self.x=xval
+self.y=yval
+def_add_(self,other):
+x=self.x+other.x
+y=self.y+other.y
+def_repr_self:
+return("x-val{},y-val:{}'.format(self.x,self.y)
+if_name_=="_main_":
+p1=Point(28,83)
+P2=point(72,82)
+print(p1)
+print(p2)
+>>>
+class A:
+    def print string(self):
+        print("from A")
+class B(A):
+    def print status(self):
+        print("ok")        
+if __name__=="__main__":
+    obj=B()
+    obj.print string()
+    obj.print status()
+>>
+class A(D)
+def printString(self):
+print("from A")
+class C(E)
+def printString(self):
+print("from C")
+classB(C,A)
+if_name_=="_main_":
+obj=B()
+print(B._mro_)
+obj.printString()
+
+
