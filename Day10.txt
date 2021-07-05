@@ -1,0 +1,51 @@
+import threading 
+import time 
+def sleeper(n):
+    print("thread {} is going to sleep to sleep for{} seconas".format(n,n))
+    time.sleep(n)
+    print("thread {} is completed".format(n))
+    t1=threading.thread(target=sleeper,args=(19,70))
+    t1.start()
+>>>>
+import time
+class MyThread(threading.Thread)
+def_init_(self,id,name,timegap):
+sefl.id=id
+self.name=name
+self.timegap=timegap
+def run(self):
+print("entering thread{}"format(self.name))
+print_time(...)
+print("exiting thread{}"format(self.name))
+def print_time(name,delay,counter):
+while counter:
+print("{}:{}".format(name,time.asctime(time.localtime(time.time())))
+time.slee(delay)
+counter-=1
+t1=Mythread(1,"thread-1"1)
+t2=Mythread(1,"thread-2"2)
+t1.start()
+t2start()
+print("Done!!")
+>>>>
+Multiprocessing:
+import multiprocessing
+def print_cube(num):
+print("cube:{}".ormat(num*num*num))
+def print_square(  num):
+print("square:{}'.format(num*num))
+if_name_=="_main_"
+p1=multiprocessing.process(target=print_cube,args=(10,))
+ 
+p2=multiprocessing.process(target=print_square,args=(10,))
+ p1.start()
+p2start()
+p1.join()
+p2.join()
+print("done")
+>>>
+import json    
+d1={"name":"priya","age":17,"class":"first"}
+fh=open("day1(d1.json".'w'))
+json.dump(d1.fh)
+fh.close()
