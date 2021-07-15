@@ -1,0 +1,24 @@
+from flask import Flask
+app=Flask(__name__)
+@app.route('/')
+def index():
+    return"helloworld"
+if __name__=="__main__":
+    app.run()
+>>>
+from flask import Flask
+app=Flask(__name__)
+@app.route('/customer',methods=['GET','POST'])
+def customer():
+    if request.method=='POST':
+        email=request.form['email']
+        organization=request.form['organization']
+        cur=conn.cursor()
+        print(email,organization)
+        cur.execute("insert into customer value ('{}''{}')".format(email,organization))
+        conn.commit()
+        return redirect(url_for('index'))
+    return "helloworld"   
+
+if __name__=="__main__":
+    app.run()
